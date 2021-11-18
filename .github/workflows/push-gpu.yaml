@@ -1,4 +1,4 @@
-name: Hello
+name: Hello GPU
 on:
   workflow_dispatch: ~
 
@@ -8,8 +8,8 @@ jobs:
     runs-on:
     - self-hosted
     - Linux
-    - default-runner
+    - gpu-runner
     steps:
     - uses: actions/checkout@v2
     - name: Hello
-      run: echo "Hello World"
+      run: echo "Hello World ! I have a GPU !"
